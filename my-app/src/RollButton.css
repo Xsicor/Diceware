@@ -1,0 +1,10 @@
+.RollButton button {
+  background-color: #fff;
+  border-color: #ccc;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 20px;
+  padding: 10px 16px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
