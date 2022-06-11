@@ -1,13 +1,11 @@
-import './RollButton.css';
+import "./RollButton.css";
 
-function RollButton() {
+function RollButton(props) {
   return (
-    <div className='RollButton'>
-      <button>
-        🎲 Roll Dice
-      </button>
+    <div className="RollButton">
+      <button onClick={props.onClick()}>🎲 Roll Dice</button>
     </div>
-  )
+  );
 }
 
 export default RollButton;

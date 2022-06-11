@@ -8,9 +8,7 @@ function App() {
       <header className="App-header">
         <Introduction />
       </header>
-      <body>
-        <DiceRollContainer/>
-      </body>
+      <DiceRollContainer/>
     </div>
   );
 }
