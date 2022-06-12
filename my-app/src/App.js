@@ -1,6 +1,6 @@
 import './App.css';
-import DiceRollContainer from './DiceRollContainer';
 import Introduction from './Introduction.js';
+import Diceware from './Diceware';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <Introduction />
       </header>
-      <DiceRollContainer/>
+      <Diceware/>
     </div>
   );
 }

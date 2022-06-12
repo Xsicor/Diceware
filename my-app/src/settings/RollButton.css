@@ -11,5 +11,12 @@
 
 .RollButton button:hover{
   cursor: pointer;
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(221, 221, 221);
+}
+
+.RollButton button:active,
+.RollButton button:focus {
+  cursor: pointer;
+  background-color: #e6e6e6;
+  border-color: #adadad;
 }
