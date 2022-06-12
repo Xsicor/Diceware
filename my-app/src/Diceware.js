@@ -5,7 +5,7 @@ import SettingsContainer from "./settings/SettingsContainer";
 
 function Diceware() {
   const [rollNum, setRollNum] = useState(5);
-  const [generate, setGenerate] = useState(false);
+  const [generate, setGenerate] = useState(0);
 
   return (
     <div className="Diceware">
@@ -13,8 +13,9 @@ function Diceware() {
         rollNum={rollNum}
         setRollNum={setRollNum}
         setGenerate={setGenerate}
+        generate={generate}
       />
-      {generate && <GenerateContainer rollNum={rollNum} />}
+      {generate > 0 && <GenerateContainer rollNum={rollNum} />}
     </div>
   );
 }

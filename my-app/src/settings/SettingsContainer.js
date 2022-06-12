@@ -12,7 +12,7 @@ function SettingsContainer(props) {
 
   function handleRoll() {
     props.setRollNum(rollNum);
-    props.setGenerate(true);
+    props.setGenerate(props.generate + 1);
   }
 
   return (
