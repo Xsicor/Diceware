@@ -7,20 +7,12 @@ function Diceware() {
   const [rollNum, setRollNum] = useState(5);
   const [generate, setGenerate] = useState(false);
 
-  function handleNumberClick(number) {
-    setRollNum(number);
-  }
-
-  function handleRoll() {
-    setGenerate(true);
-  }
-
   return (
     <div className="Diceware">
       <SettingsContainer
-        handleRoll={handleRoll}
         rollNum={rollNum}
-        handleNumberClick={handleNumberClick}
+        setRollNum={setRollNum}
+        setGenerate={setGenerate}
       />
       {generate && <GenerateContainer rollNum={rollNum} />}
     </div>

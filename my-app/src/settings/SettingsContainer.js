@@ -1,16 +1,25 @@
 import "./SettingsContainer.css";
 import DiceRollsNum from "./DiceRollsNum";
 import RollButton from "./RollButton";
+import { useState } from "react";
 
 function SettingsContainer(props) {
+  const [rollNum, setRollNum] = useState(props.rollNum);
+
+  function handleNumberClick(number) {
+    setRollNum(number);
+  }
+
+  function handleRoll() {
+    props.setRollNum(rollNum);
+    props.setGenerate(true);
+  }
+
   return (
     <div className="SettingsContainer">
       <h1>Number of dice rolls:</h1>
-      <DiceRollsNum
-        selected={props.rollNum}
-        onClick={props.handleNumberClick}
-      />
-      <RollButton onClick={props.handleRoll} />
+      <DiceRollsNum selected={rollNum} onClick={handleNumberClick} />
+      <RollButton onClick={handleRoll} />
     </div>
   );
 }
