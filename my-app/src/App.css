@@ -1,7 +1,12 @@
+html, body, #root, .App {
+  height: 100%;
+}
+
 .App {
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: #EDF2F4;
 }
 
 .App-header {
