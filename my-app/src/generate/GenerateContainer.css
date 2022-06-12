@@ -5,6 +5,14 @@
   margin-top: 40px;
 }
 
-.password {
+.passwordContainer {
   margin-top: 40px;
+}
+
+.passwordText {
+  font-weight: normal;
+}
+
+.pass {
+  font-size: 50px;
 }
