@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Diceware/static/css/main.ef557a65.css",
+    "main.js": "/Diceware/static/js/main.e0048c45.js",
+    "index.html": "/Diceware/index.html",
+    "main.ef557a65.css.map": "/Diceware/static/css/main.ef557a65.css.map",
+    "main.e0048c45.js.map": "/Diceware/static/js/main.e0048c45.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef557a65.css",
+    "static/js/main.e0048c45.js"
+  ]
+}
